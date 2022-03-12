@@ -9,6 +9,14 @@ fetch("https://www.breakingbadapi.com/api/characters")
       let card = document.createElement("section");
       card.setAttribute("class", "card");
       container.appendChild(card);
+
+      let imgBox=document.createElement("div");
+      imgBox.classList.add("imgBox")
+      card.appendChild(imgBox)
+
+      let img=document.createElement("img");
+      img.src=ele.img;
+      imgBox.appendChild(img)
     });
   })
   .catch((err) => {
