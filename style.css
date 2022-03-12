@@ -11,12 +11,15 @@
     align-items: center;
     background: #16384c;
   }
-  h1{
+h1 {
     padding: 50px;
     text-align: center;
-    color: #fff;
-
-  }
+    color: #fffafa;
+    font-size: 67px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgb(246 246 246);
+    text-shadow: 2px 2px 4px #000000;
+}
   
   .container {
     position: relative;
