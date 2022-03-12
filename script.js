@@ -5,7 +5,11 @@ fetch("https://www.breakingbadapi.com/api/characters")
     return res.json();
   })
   .then((data) => {
-    console.log(data);
+    data.forEach((ele) => {
+      let card = document.createElement("section");
+      card.setAttribute("class", "card");
+      container.appendChild(card);
+    });
   })
   .catch((err) => {
     console.error(err);
